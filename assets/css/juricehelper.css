@@ -1,0 +1,15 @@
+
+
+#JurisHelper {
+    padding: 50px 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+}
+
+#JurisHelper h2 {
+    text-align: center;
+    font-family: 'Arial', sans-serif; 
+    font-size: 2.3rem; 
+    color: #333; 
+}
