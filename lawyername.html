@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lawyers</title>
+    <title>Lawyar Names</title>
     <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/lawyarname.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/lawyer.css">
 </head>
 <body>
     <nav>
@@ -37,29 +37,93 @@
             </div>
             <a href="index.html">Contact</a>
         </div>
-    </nav><br><br>
+    </nav>
 
-    <h1>Lawyers</h1>
-
+    <div class="breadcrumb">
+        <a href="index.html" class="common">Home</a>
+        <span>&gt;</span>
+        <a href="lawyer.html" class="com">lawyer</a>
+    </div>
 
     <div class="container">
-        <div class="card">
-           <img src="assets/img/image.webp" alt="laws" loading="lazy">
-           <h4 class="card-title">Fundamental Rights</h4>
-           <p class="card-content">The Pillars of Equality and Freedom!</p>
-           <a href="lawyername.html">More</a>
+        <div class="left-content">
+            <div class="lawyer-card">
+                <h2>Male Lawyer</h2>
+                <div class="lawyer-info">
+                    <p><strong>Name:</strong> Mr. Karthick</p>
+                    <p><strong>Specialization:</strong> Criminal Law</p>
+                    <p><strong>Experience:</strong> 10 years</p>
+                    <h3>Achievements:</h3>
+                    <ul>
+                        <li>Defended high-profile cases with a 90% success rate.</li>
+                        <li>Guest speaker at national legal seminars on criminal justice.</li>
+                        <li>Advocate for fair trials and justice reform.</li>
+                    </ul>
+                    <h3>Description:</h3>
+                    <p>Karthick, a criminal law expert with 12 years of experience, is known for his commitment to justice and exceptional case outcomes. Trust him to protect your rights.</p>
+        
+                    <h3>Education Details:</h3>
+                    <p><strong>Degrees:</strong> LL.B, LL.M (University Name)</p>
+                    <p><strong>Additional Certifications:</strong> E.g., Diploma in Cyber Law, Mediation Training.</p>
+        
+                    <h3>Languages Spoken:</h3>
+                    <p>English, Hindi, Tamil</p>
+        
+                    <h3>Location/Practice Area:</h3>
+                    <p><strong>City:</strong> Delhi, Bangalore, Mumbai</p>
+                    <p><strong>Courts Practiced In:</strong> High Court, Supreme Court</p>
+        
+                    <h3>Case Specialization/Types Handled:</h3>
+                    <ul>
+                        <li><strong>Corporate:</strong> Mergers, IP disputes, compliance issues.</li>
+                        <li><strong>Criminal:</strong> Homicide, fraud, cybercrime.</li>
+                        <li><strong>Civil:</strong> Property disputes, family law cases.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="card">
-           <img src="assets/img/image 2.webp" alt="laws" loading="lazy">
-           <h4 class="card-title">Constitutional Rights</h4>
-           <p class="card-content">Your Legal Foundation for Justice!</p>
-           <a href="constitutional.html">More</a>
+        
+
+        <div class="right-content">
+            <h2>Faqs</h2>
+            <div class="accordion">
+                <button class="accordion-item">
+                    Section 1
+                </button>
+                <div class="accordion-content">
+                    <p>This is section 1 content.</p>
+                </div>
+        
+                <button class="accordion-item">
+                    Section 2
+                </button>
+                <div class="accordion-content">
+                    <p>This is section 2 content.</p>
+                </div>
+        
+                <button class="accordion-item">
+                    Section 3
+                </button>
+                <div class="accordion-content">
+                    <p>This is section 3 content.</p>
+                </div>
+
+                <button class="accordion-item">
+                    Section 4
+                </button>
+                <div class="accordion-content">
+                    <p>This is section 4 content.</p>
+                </div>
+
+                <button class="accordion-item">
+                    Section 5
+                </button>
+                <div class="accordion-content">
+                    <p>This is section 5 content.</p>
+                </div>
+            </div>
         </div>
-   </div>
-
-
-
-
+    </div>
     <footer class="footer">
         <div class="footer-content">
             <div class="social-section">
@@ -95,6 +159,19 @@
             ↑
         </a>
     </footer>
-<script src="assets/js/index.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const accordionItems = document.querySelectorAll('.accordion-item');
+            accordionItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const isVisible = content.style.display === 'block';
+                    document.querySelectorAll('.accordion-content').forEach(content => content.style.display = 'none');
+                    content.style.display = isVisible ? 'none' : 'block';
+                });
+            });
+        });
+    </script>
 </body>
 </html>
