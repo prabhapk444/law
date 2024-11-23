@@ -27,15 +27,21 @@ nav {
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+}
+
+.logo img {
+    height: 80px; 
+    width: auto; 
+    border-radius: 8px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+    margin-right: 10px; 
 }
 
 .logo-text {
-    font-size: 2rem;
-    color: var(--gold-color);
+    color: #fff;
+    font-size: 1.5rem;
     font-weight: bold;
 }
-
 .nav-links {
     display: flex;
     gap: 2rem;
