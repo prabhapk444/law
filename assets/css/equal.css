@@ -96,14 +96,12 @@ ul li ul li {
 .right-content {
     padding: 20px;
     border-radius: 12px;
-    border: 1px solid #e0e0e0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
 }
 
 .accordion-item {
+    color: white;
     background-color: #ffcc00;
-    color: #ffffff;
     padding: 15px;
     gap: 20px;
     width: 100%;
@@ -117,13 +115,12 @@ ul li ul li {
 }
 
 .accordion-content {
+    text-align: justify;
     padding: 15px;
     display: none;
     border-radius: 8px;
     margin-top: 5px;
-    border: 1px solid #e0e0e0;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    background-color: #f8f9fa;
 }
 
 
@@ -169,6 +166,7 @@ ul li ul li {
 
    
     .accordion-content {
+        text-align: justify;
         font-size: 14px;
         padding: 12px;
     }
@@ -208,6 +206,7 @@ ul li ul li {
     }
 
     .accordion-content {
+        text-align: justify;
         font-size: 13px;
     }
 }
