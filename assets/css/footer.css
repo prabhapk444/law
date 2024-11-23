@@ -55,19 +55,7 @@
     fill: var(--dark-bg);
 }
 
-.copyright {
-    padding-top: 1.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.7);
-    text-align: center;
-}
 
-.copyright a {
-    color: var(--gold-color);
-    text-decoration: none;
-    
-}
 
 .scroll-top {
     position: fixed;
@@ -100,7 +88,4 @@
         justify-content: center;
     }
 
-    .copyright {
-        text-align: center;
-    }
 }
