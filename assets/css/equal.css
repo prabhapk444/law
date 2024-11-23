@@ -1,20 +1,20 @@
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #333;
 }
 
 
 .breadcrumb {
-    padding: 15px 20px;
+    padding: 15px 30px;
     margin: 20px 0;
-    border-radius: 5px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
     margin-top: 100px;
 }
 
@@ -26,125 +26,102 @@ body {
 }
 
 .breadcrumb a:hover {
-    color: #d4a017;
+    color: #ffcc00;
 }
 
 .breadcrumb span {
-    margin: 0 10px;
+    margin: 0 12px;
     color: #6c757d;
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
 }
 
 
 .left-content {
-    flex: 1;
-    padding: 30px;
-    border-radius: 12px;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.left-content h1 {
-    margin-bottom: 20px;
-    color: #333;
-    font-size: 2.4rem;
-    font-weight: 700;
-    text-align: left;
-    border-left: 6px solid #d4a017;
-    padding-left: 15px;
-}
-
-.left-content h2 {
-    color: #333;
-    font-size: 1.8rem;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    font-weight: 600;
-    border-bottom: 2px solid #f0f0f0;
-    padding-bottom: 8px;
-}
-
-.left-content p {
-    margin-bottom: 20px;
-    color: #555;
     line-height: 1.8;
-    font-size: 1rem;
-    text-align: justify;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #333;
 }
 
-.left-content ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+h1, h2 {
+    color:#333;
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: 700;
 }
 
-.left-content ul li {
+p {
+    color: #555;
+    font-size: 16px;
     margin-bottom: 15px;
-    display: flex;
-    gap: 10px;
-    align-items: flex-start;
 }
 
-.left-content ul li::before {
-    content: '✔';
-    color: #d4a017;
-    font-size: 1.2rem;
-    margin-top: 2px;
+ul {
+    list-style-type: none;
+    padding-left: 0;
 }
 
-.left-content ul li strong {
-    color: #002147;
-    font-weight: 600;
+ul li {
+    margin: 12px 0;
+    font-size: 16px;
 }
 
-.left-content ul li span {
+strong {
+    font-weight: bold;
+}
+
+span {
     color: #555;
 }
 
-.left-content p:last-of-type {
-    text-align: justify;
-    margin-top: 20px;
-    font-weight: 500;
-    color: #333;
+ul ul {
+    margin-left: 20px;
+}
+
+ul ul li {
+    font-size: 15px;
+}
+
+ul li ul li {
+    color: #555;
 }
 
 
 .right-content {
-    flex: 1;
     padding: 20px;
     border-radius: 12px;
     border: 1px solid #e0e0e0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
 }
 
 
 .accordion-item {
-    background-color: #d4a017;
+    background-color: #ffcc00;
     color: #ffffff;
     padding: 15px;
-    gap:40px;
+    gap: 20px;
     width: 100%;
     text-align: left;
     border: none;
     cursor: pointer;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-size: 16px;
-    border-radius: 8px;
-    transition: background-color 0.3s ease-in-out;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
 }
 
-.accordion-item:hover {
-    background-color: #d4a017;
-    color: #ffffff;
-}
+
 
 .accordion-content {
     padding: 15px;
@@ -153,33 +130,37 @@ body {
     margin-top: 5px;
     border: 1px solid #e0e0e0;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    background-color: #f8f9fa;
 }
 
 
 @media (max-width: 768px) {
     .breadcrumb {
         font-size: 14px;
-        padding: 12px 15px;
+        padding: 12px 20px;
     }
     .breadcrumb a {
         font-size: 14px;
     }
     .container {
-        flex-direction: column;
+        grid-template-columns: 1fr; 
     }
-
     .left-content, .right-content {
         width: 100%;
     }
     .left-content h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     .left-content h2 {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     .left-content p, .left-content ul li {
         font-size: 1rem;
+    }
+
+    .accordion-item {
+        font-size: 15px;
     }
 }

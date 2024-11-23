@@ -1,4 +1,6 @@
-
+*{
+    font-family: 'Arial', sans-serif;
+}
 #JusticeTrio {
     padding: 50px 20px;
     border-radius: 10px;

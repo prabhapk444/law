@@ -1,4 +1,6 @@
-
+*{
+    font-family: 'Arial', sans-serif;
+}
 
 #JurisHelper {
     padding: 50px 20px; 

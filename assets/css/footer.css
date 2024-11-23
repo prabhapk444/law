@@ -1,3 +1,7 @@
+*{
+    font-family: 'Arial', sans-serif;
+}
+
 :root {
     --primary-color: #6B1B20;
     --gold-color: #C6A052;

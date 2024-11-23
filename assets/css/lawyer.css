@@ -1,7 +1,10 @@
+*{
+    font-family: 'Arial', sans-serif;
+}
+
 
 h1 {
     text-align: center;
-    font-family: 'Arial', sans-serif;
     color: #333;
     font-size: 3rem;
     margin-top: 50px;
